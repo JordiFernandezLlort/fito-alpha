@@ -22,13 +22,13 @@ public class MainMenu extends AppCompatActivity {
         lupa = findViewById(R.id.botoLupa);
         opcions = findViewById(R.id.botoOpcions);
 
-        configuracio.setOnClickListener(new View.OnClickListener(){
+        /*configuracio.setOnClickListener(new View.OnClickListener(){
             @Override
                     public void onClick(View view) {
                     Intent intent = new Intent(getBaseContext(), Configuracio.class);
                     startActivity(intent);
             }
-        });
+        });*/
 
         compte.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -38,7 +38,7 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
-        camera.setOnClickListener(new View.OnClickListener(){
+       /* camera.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getBaseContext(), Camera.class);
@@ -52,12 +52,12 @@ public class MainMenu extends AppCompatActivity {
                 Intent intent = new Intent(getBaseContext(), SearchActivity.class);
                 startActivity(intent);
             }
-        });
+        }); */
 
         opcions.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getBaseContext(), Opcions.class);
+                Intent intent = new Intent(getBaseContext(), Menu.class);
                 startActivity(intent);
             }
         });

@@ -1,6 +1,6 @@
 package com.jfernandez.fito_alpha;
 
-
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -3,14 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-
+        <entry key="..\:/Users/Usuario/Documents/Natalia/2n DAM/M13/Github/fito-alpha/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Usuario/Documents/Natalia/2n DAM/M13/Github/fito-alpha/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
-
+        <entry key="..\:/Users/Usuario/Documents/Natalia/2n DAM/M13/Github/fito-alpha/app/src/main/res/layout/activity_menu.xml" value="0.2" />
         <entry key="..\:/Users/jordi/Desktop/alpha/app/src/main/res/layout/activity_main_menu.xml" value="0.2" />
         <entry key="..\:/Users/usuari/Desktop/JOVIAT/2n Curs/Projecte/AndroidStudio/Plantower/fito-alpha/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/Users/usuari/Desktop/JOVIAT/2n Curs/Projecte/AndroidStudio/Plantower/fito-alpha/app/src/main/res/layout/activity_main2.xml" value="0.1796875" />
         <entry key="..\:/Users/usuari/Desktop/JOVIAT/2n Curs/Projecte/AndroidStudio/Plantower/fito-alpha/app/src/main/res/layout/activity_main_menu.xml" value="0.16666666666666666" />
-
       </map>
     </option>
   </component>
