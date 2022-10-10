@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuTirar">
+
+    <ImageButton
+        android:id="@+id/botoConfig"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#4CAF50"
+        android:scaleType="centerInside"
+        android:src="@drawable/settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/botoCompte"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="33dp"
+        android:backgroundTint="#4CAF50"
+        android:scaleType="centerInside"
+        android:src="@drawable/user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/botoCamera"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#4CAF50"
+        android:scaleType="centerInside"
+        android:src="@drawable/photo_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/botoOpcions"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#4CAF50"
+        android:scaleType="centerInside"
+        android:src="@drawable/more"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botoLupa"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/botoLupa"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#4CAF50"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botoCamera"
+        app:srcCompat="@drawable/search" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="345dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="108dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plantowerlogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
