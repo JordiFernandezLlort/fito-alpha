@@ -33,7 +33,7 @@ public class MainMenu extends AppCompatActivity {
         compte.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getBaseContext(), Compte.class);
+                Intent intent = new Intent(getBaseContext(), Login.class);
                 startActivity(intent);
             }
         });
