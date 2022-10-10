@@ -1,30 +1,28 @@
 package com.jfernandez.fito_alpha;
 
-import androidx.appcompat.app.AppCompatActivity;
+
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Login extends AppCompatActivity {
+public class Login extends AppCompatActivity {//AppCompatActivity {
 
-    private Button btRegistre, btIsessio, btEnrere1;
-    private EditText usuari, contrasenya;
+    private Button btRegistre, btIsessio;
+    private TextView usuari, contrasenya;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
 
         btRegistre = findViewById(R.id.registre);
         btIsessio = findViewById(R.id.isessio);
         usuari = findViewById(R.id.nom);
         contrasenya = findViewById(R.id.contrasenya);
-        btEnrere1 = findViewById(R.id.enrere);
 
         btRegistre.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,16 +42,11 @@ public class Login extends AppCompatActivity {
                 }else{
                     Intent pagina2 = new Intent(getBaseContext(), Registre.class);
                     startActivity(pagina2);
+
                 }
             }
         });
 
-        btEnrere1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
 
     }
 }
