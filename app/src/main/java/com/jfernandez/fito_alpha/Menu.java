@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -21,7 +20,7 @@ public class Menu extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         Intent dadesRebudes = getIntent();
 
-        btEnrere = findViewById(R.id.btEnrere1);
+        btEnrere = findViewById(R.id.btEnrere);
         btCamera = findViewById(R.id.btCamera);
         btCerca = findViewById(R.id.btCerca);
         btGuardades = findViewById(R.id.btGuardar);
