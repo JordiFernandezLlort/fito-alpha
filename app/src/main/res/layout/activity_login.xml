@@ -11,12 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-<<<<<<< HEAD
         android:backgroundTint="#4CAF50"
-=======
-        android:background="#FFFFFF"
-        android:backgroundTint="#FF9800"
->>>>>>> 9299666b22fa2805c6c4c61d1565ea3bb488fd8b
         android:text="Registrar-se"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.533"
@@ -29,13 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-<<<<<<< HEAD
         android:backgroundTint="#4CAF50"
-=======
-        android:background="@color/white"
-        android:backgroundTint="@color/green"
-        android:backgroundTintMode="add"
->>>>>>> 9299666b22fa2805c6c4c61d1565ea3bb488fd8b
         android:text="Iniciar Sessió"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
@@ -69,7 +58,6 @@
         app:layout_constraintTop_toBottomOf="@+id/nom"
         tools:ignore="TouchTargetSizeCheck" />
 
-<<<<<<< HEAD
     <ImageButton
         android:id="@+id/btEnrere"
         android:layout_width="wrap_content"
@@ -87,6 +75,4 @@
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
 
-=======
->>>>>>> 9299666b22fa2805c6c4c61d1565ea3bb488fd8b
 </androidx.constraintlayout.widget.ConstraintLayout>
