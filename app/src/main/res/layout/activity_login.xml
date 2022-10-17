@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:background="#FFFFFF"
+        android:backgroundTint="#FF9800"
         android:text="Registrar-se"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.533"
@@ -24,8 +25,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:background="@android:color/holo_green_dark"
-        android:backgroundTint="#FFFFFF"
+        android:background="@color/white"
+        android:backgroundTint="@color/green"
+        android:backgroundTintMode="add"
         android:text="Iniciar Sessió"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
@@ -58,4 +60,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nom"
         tools:ignore="TouchTargetSizeCheck" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
