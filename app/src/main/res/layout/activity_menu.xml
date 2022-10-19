@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/titolMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="107dp"
+        android:text="MENÚ"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btCamera"
+        android:layout_width="410dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="36dp"
+        android:text="Càmera"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titolMenu" />
+
+    <Button
+        android:id="@+id/btCerca"
+        android:layout_width="410dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="32dp"
+        android:text="Cerca"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCamera" />
+
+    <Button
+        android:id="@+id/btGuardar"
+        android:layout_width="410dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="32dp"
+        android:text="Guardades/preferides"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCerca" />
+
+    <Button
+        android:id="@+id/btXarxes"
+        android:layout_width="410dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="32dp"
+        android:text="Xarxes socials"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btGuardar" />
+
+    <Button
+        android:id="@+id/btReceptes"
+        android:layout_width="410dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="32dp"
+        android:text="Receptes"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btXarxes" />
+
+    <ImageButton
+        android:id="@+id/btEnrere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="49dp"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintEnd_toStartOf="@+id/titolMenu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+        app:tint="#FFFFFF" />
+</androidx.constraintlayout.widget.ConstraintLayout>
