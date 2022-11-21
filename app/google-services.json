@@ -1,13 +1,14 @@
 {
   "project_info": {
     "project_number": "340128342999",
+    "firebase_url": "https://fito-alpha-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "fito-alpha",
     "storage_bucket": "fito-alpha.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:340128342999:android:d101e7fe0cffabc8f7e192",
+        "mobilesdk_app_id": "1:340128342999:android:1baff6b58541c5a9f7e192",
         "android_client_info": {
           "package_name": "com.jfernandez.fito_alpha"
         }

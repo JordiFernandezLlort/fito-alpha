@@ -27,7 +27,6 @@ public class MainMenu extends AppCompatActivity {
     private static final int RC_SIGN_IN = 123;
     private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
-    private FirebaseUser user;
     private ImageButton configuracio, compte, camera, lupa, opcions;
 
     @Override
@@ -61,7 +60,7 @@ public class MainMenu extends AppCompatActivity {
                 mAuthStateListener = new FirebaseAuth.AuthStateListener() {
                    @Override
                     public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                        user = mFirebaseAuth.getCurrentUser();
+                        FirebaseUser user = mFirebaseAuth.getCurrentUser();
                         if (user != null){
                             Toast.makeText(MainMenu.this, "hi ha usuari (click)", Toast.LENGTH_LONG).show();
                             //fer daialog
@@ -71,6 +70,7 @@ public class MainMenu extends AppCompatActivity {
                             Toast.makeText(MainMenu.this, "no hi ha usuari (click)", Toast.LENGTH_LONG).show();
                             //9. resetegem la informació que contenen els camps informatius del layout. en cas que canviem d'usuari hem de protegir la informac
                             //11. inici amb google
+
                             AuthUI.IdpConfig googleIdp = new AuthUI.IdpConfig.GoogleBuilder().build();
                             AuthUI.IdpConfig microsoft = new AuthUI.IdpConfig.MicrosoftBuilder().build();
                             AuthUI.IdpConfig github = new AuthUI.IdpConfig.GitHubBuilder().build();
@@ -79,11 +79,14 @@ public class MainMenu extends AppCompatActivity {
                                     createSignInIntentBuilder()
                                     .setIsSmartLockEnabled(false)
                                     .setTosUrl("https://joviat.com")
-                                    .setAvailableProviders(Arrays.asList(new AuthUI.IdpConfig.EmailBuilder().build(),googleIdp, microsoft,github))
+                                    .setAvailableProviders(Arrays.asList(new AuthUI.IdpConfig.EmailBuilder().build(),googleIdp))
                                     .build(), RC_SIGN_IN);
+
                         }
                     }
+
                 };
+
                 mFirebaseAuth.addAuthStateListener(mAuthStateListener);
             }
         });
