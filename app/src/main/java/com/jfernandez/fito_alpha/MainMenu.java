@@ -7,6 +7,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -150,6 +151,33 @@ public class MainMenu extends AppCompatActivity {
         //deasctivar el servei d'autenticació per no gastar bateria
         if(mAuthStateListener!=null){
             mFirebaseAuth.removeAuthStateListener(mAuthStateListener);
+        }
+    }
+
+    //7. creem un menú per poder fer logout
+    /*
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_logout,menu); //en aquest punt creem un nou xml resource file de tipus menu
+        return super.onCreateOptionsMenu(menu);
+    }*/
+
+    @Override
+    public boolean onCreateOptionsMenu(android.view.Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_logout,menu); //en aquest punt creem un nou xml resource file de tipus menu
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    //8. acció a fer pel menu seleccionat
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.action_sign_out:
+                AuthUI.getInstance().signOut(this);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 
