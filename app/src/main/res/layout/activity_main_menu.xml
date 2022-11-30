@@ -4,81 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainMenuTirar">
-
-    <ImageButton
-        android:id="@+id/botoConfig"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="#4CAF50"
-        android:scaleType="centerInside"
-        android:src="@drawable/settings"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/botoCompte"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="33dp"
-        android:backgroundTint="#4CAF50"
-        android:scaleType="centerInside"
-        android:src="@drawable/user"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/botoCamera"
-        android:layout_width="150dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#4CAF50"
-        android:scaleType="centerInside"
-        android:src="@drawable/photo_camera"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <ImageButton
-        android:id="@+id/botoOpcions"
-        android:layout_width="150dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#4CAF50"
-        android:scaleType="centerInside"
-        android:src="@drawable/more"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botoLupa"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageButton
-        android:id="@+id/botoLupa"
-        android:layout_width="150dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="24dp"
-        android:backgroundTint="#4CAF50"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/botoCamera"
-        app:srcCompat="@drawable/search" />
+    tools:context=".MainMenuTirar"
+    android:background="@drawable/background">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="345dp"
-        android:layout_height="118dp"
-        android:layout_marginTop="108dp"
+        android:id="@+id/ivTitol"
+        android:layout_width="388dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="130dp"
         android:layout_weight="1"
         android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/plantowerlogo" />
+
+    <ImageButton
+        android:id="@+id/btnCamera"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="120dp"
+        android:background="#00A82323"
+        android:scaleType="fitCenter"
+        android:src="@drawable/camera2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivTitol" />
+
+    <ImageButton
+        android:id="@+id/btnLupa"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/lupa"
+        app:layout_constraintEnd_toEndOf="@+id/btnCamera"
+        app:layout_constraintStart_toStartOf="@+id/btnCamera"
+        app:layout_constraintTop_toBottomOf="@+id/btnCamera" />
+
+    <ImageButton
+        android:id="@+id/btnOpcions"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/menu"
+        app:layout_constraintEnd_toEndOf="@+id/btnLupa"
+        app:layout_constraintStart_toStartOf="@+id/btnLupa"
+        app:layout_constraintTop_toBottomOf="@+id/btnLupa" />
+
+    <ImageButton
+        android:id="@+id/btnFeedback"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/correu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnCompta"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="33dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/profile_user_account_icon_190938"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,22 +7,35 @@
     tools:context=".FoundPlant"
     android:background="@drawable/background">
 
+    <ImageButton
+        android:id="@+id/btnEnrereFP"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#00101E10"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:tint="#4CAF50"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/btnNC"
         android:layout_width="39dp"
         android:layout_height="41dp"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/textView13"
-        app:layout_constraintTop_toTopOf="@+id/textView13"
-        tools:layout_editor_absoluteX="328dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/txNomCientific"
+        app:layout_constraintStart_toEndOf="@+id/txNomCientific"
+        app:layout_constraintTop_toTopOf="@+id/txNomCientific" />
 
     <TextView
-        android:id="@+id/textView13"
-        android:layout_width="320dp"
+        android:id="@+id/txNomCientific"
+        android:layout_width="260dp"
         android:layout_height="30dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="51dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="50dp"
         android:layout_marginBottom="5dp"
         android:background="#E1FFBF"
         android:text="Nom Cientìfic"
@@ -30,18 +43,15 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView14"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvNomsPopulars"
+        app:layout_constraintEnd_toStartOf="@+id/btnNC"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/ivPlanta" />
 
     <TextView
-        android:id="@+id/textView14"
-        android:layout_width="320dp"
+        android:id="@+id/tvNomsPopulars"
+        android:layout_width="260dp"
         android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
         android:layout_marginBottom="5dp"
         android:background="#E1FFBF"
         android:text="Noms Populars"
@@ -49,16 +59,14 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView15"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/tvPropietatsNutricionals"
+        app:layout_constraintEnd_toStartOf="@+id/btnNC"
+        app:layout_constraintStart_toStartOf="@+id/txNomCientific" />
 
     <TextView
-        android:id="@+id/textView15"
-        android:layout_width="320dp"
+        android:id="@+id/tvPropietatsNutricionals"
+        android:layout_width="260dp"
         android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
         android:layout_marginBottom="5dp"
         android:background="#E1FFBF"
         android:text="Propietats Nurticionals"
@@ -66,16 +74,14 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView16"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/tvPropietatsMedicinals"
+        app:layout_constraintEnd_toEndOf="@+id/tvNomsPopulars"
+        app:layout_constraintStart_toStartOf="@+id/tvNomsPopulars" />
 
     <TextView
-        android:id="@+id/textView16"
-        android:layout_width="320dp"
+        android:id="@+id/tvPropietatsMedicinals"
+        android:layout_width="260dp"
         android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
         android:layout_marginBottom="5dp"
         android:background="#E1FFBF"
         android:text="Propietats Medicinals"
@@ -83,16 +89,14 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView17"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/tvReceptes"
+        app:layout_constraintEnd_toEndOf="@+id/tvPropietatsNutricionals"
+        app:layout_constraintStart_toStartOf="@+id/tvPropietatsNutricionals" />
 
     <TextView
-        android:id="@+id/textView17"
-        android:layout_width="320dp"
+        android:id="@+id/tvReceptes"
+        android:layout_width="260dp"
         android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
         android:layout_marginBottom="5dp"
         android:background="#E1FFBF"
         android:text="Receptes"
@@ -100,16 +104,14 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView18"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/tvConreu"
+        app:layout_constraintEnd_toEndOf="@+id/tvPropietatsMedicinals"
+        app:layout_constraintStart_toStartOf="@+id/tvPropietatsMedicinals" />
 
     <TextView
-        android:id="@+id/textView18"
-        android:layout_width="320dp"
+        android:id="@+id/tvConreu"
+        android:layout_width="260dp"
         android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
         android:layout_marginBottom="5dp"
         android:background="#E1FFBF"
         android:text="Conreu"
@@ -117,16 +119,14 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView19"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/tvPartsAprofitables"
+        app:layout_constraintEnd_toEndOf="@+id/tvReceptes"
+        app:layout_constraintStart_toStartOf="@+id/tvReceptes" />
 
     <TextView
-        android:id="@+id/textView19"
-        android:layout_width="320dp"
+        android:id="@+id/tvPartsAprofitables"
+        android:layout_width="260dp"
         android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
         android:layout_marginBottom="5dp"
         android:background="#E1FFBF"
         android:text="Parts Aprofitables"
@@ -134,144 +134,112 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView20"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvCombinacions"
+        app:layout_constraintEnd_toEndOf="@+id/tvConreu"
         app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/tvConreu" />
 
     <TextView
-        android:id="@+id/textView20"
-        android:layout_width="320dp"
+        android:id="@+id/tvCombinacions"
+        android:layout_width="260dp"
         android:layout_height="30dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="5dp"
         android:background="#E1FFBF"
         android:text="Combinacions"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvPartsAprofitables"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txPlantaBuscada"
-        android:layout_width="303dp"
-        android:layout_height="117dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="10dp"
-        android:fontFamily="@font/aclonica"
-        android:text="PLANTA BUSCADA"
-        android:textAlignment="center"
-        android:textColor="#0F5012"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="@+id/tvPartsAprofitables"
+        app:layout_constraintTop_toBottomOf="@+id/tvPartsAprofitables" />
 
     <ImageButton
-        android:id="@+id/btnTornarEnrerre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="25dp"
-        android:backgroundTint="#4CAF50"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_revert" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="56dp"
-        android:layout_height="51dp"
+        android:id="@+id/btnPreferit"
+        android:layout_width="64dp"
+        android:layout_height="60dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="30dp"
-        android:backgroundTint="#4CAF50"
+        android:backgroundTint="#004CAF50"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/btnNP"
         android:layout_width="39dp"
         android:layout_height="41dp"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/textView14"
-        app:layout_constraintTop_toTopOf="@+id/textView14"
-        tools:layout_editor_absoluteX="328dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/tvNomsPopulars"
+        app:layout_constraintStart_toEndOf="@+id/tvNomsPopulars"
+        app:layout_constraintTop_toTopOf="@+id/tvNomsPopulars" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/btnPN"
         android:layout_width="38dp"
         android:layout_height="42dp"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/textView15"
-        app:layout_constraintTop_toTopOf="@+id/textView15"
-        tools:layout_editor_absoluteX="328dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/tvPropietatsNutricionals"
+        app:layout_constraintStart_toEndOf="@+id/tvPropietatsNutricionals"
+        app:layout_constraintTop_toTopOf="@+id/tvPropietatsNutricionals" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/btnPM"
         android:layout_width="39dp"
         android:layout_height="42dp"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/textView16"
-        app:layout_constraintTop_toTopOf="@+id/textView16"
-        tools:layout_editor_absoluteX="328dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/tvPropietatsMedicinals"
+        app:layout_constraintStart_toEndOf="@+id/tvPropietatsMedicinals"
+        app:layout_constraintTop_toTopOf="@+id/tvPropietatsMedicinals" />
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/btnR"
         android:layout_width="39dp"
         android:layout_height="42dp"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/textView17"
-        app:layout_constraintTop_toTopOf="@+id/textView17"
-        tools:layout_editor_absoluteX="328dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/tvReceptes"
+        app:layout_constraintStart_toEndOf="@+id/tvReceptes"
+        app:layout_constraintTop_toTopOf="@+id/tvReceptes" />
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/btnC"
         android:layout_width="39dp"
         android:layout_height="42dp"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/textView18"
-        app:layout_constraintTop_toTopOf="@+id/textView18"
-        tools:layout_editor_absoluteX="328dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/tvConreu"
+        app:layout_constraintStart_toEndOf="@+id/tvPartsAprofitables"
+        app:layout_constraintTop_toTopOf="@+id/tvConreu" />
 
     <Button
-        android:id="@+id/button20"
+        android:id="@+id/btnPA"
         android:layout_width="39dp"
         android:layout_height="42dp"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/textView19"
-        app:layout_constraintTop_toTopOf="@+id/textView19"
-        tools:layout_editor_absoluteX="328dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/tvPartsAprofitables"
+        app:layout_constraintStart_toEndOf="@+id/tvCombinacions"
+        app:layout_constraintTop_toTopOf="@+id/tvPartsAprofitables" />
 
     <Button
-        android:id="@+id/button21"
+        android:id="@+id/btnComb"
         android:layout_width="39dp"
         android:layout_height="42dp"
         android:text="+"
-        app:layout_constraintBottom_toBottomOf="@+id/textView20"
-        app:layout_constraintTop_toTopOf="@+id/textView20"
-        tools:layout_editor_absoluteX="328dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/tvCombinacions"
+        app:layout_constraintStart_toEndOf="@+id/tvCombinacions"
+        app:layout_constraintTop_toTopOf="@+id/tvCombinacions" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/ivPlanta"
         android:layout_width="213dp"
         android:layout_height="189dp"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/planta"
-        tools:layout_editor_absoluteY="218dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/planta" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,23 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registre">
+    tools:context=".Registre"
+    android:background="@drawable/background">
+
+    <ImageButton
+        android:id="@+id/btnEnrereR"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:backgroundTint="#00101E10"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/btnConfirmar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnConfirmar"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:tint="#4CAF50"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/titiolRegistre"
+        android:id="@+id/tvTitolRegistre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/aclonica"
         android:text="REGISTRE"
-        android:textColor="#000000"
-        android:textSize="30sp"
+
+        android:textColor="#0F5012"
+        android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/subtitolUsuari"
+        android:id="@+id/tvUsuari"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -35,7 +54,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/subtitolRContrasenya"
+        android:id="@+id/tvRContrasenya"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -50,7 +69,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/subtitolTelefon"
+        android:id="@+id/tvTelefon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -65,7 +84,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/Email"
+        android:id="@+id/tvEmailR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -80,7 +99,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/subtitolContrasenya"
+        android:id="@+id/tvContrasenya"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -95,7 +114,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/ptUsuari"
+        android:id="@+id/etUsuari"
         android:layout_width="345dp"
         android:layout_height="41dp"
         android:layout_marginStart="30dp"
@@ -106,41 +125,41 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitolUsuari"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsuari"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/ptContrasenya"
+        android:id="@+id/etContrasenya"
         android:layout_width="345dp"
         android:layout_height="41dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="30dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitolUsuari"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsuari"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/ptRContrasenya"
+        android:id="@+id/etRContrasenya"
         android:layout_width="345dp"
         android:layout_height="41dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="160dp"
         android:layout_marginEnd="30dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitolUsuari"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsuari"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/ptTelefon"
+        android:id="@+id/etTelefon"
         android:layout_width="345dp"
         android:layout_height="41dp"
         android:layout_marginStart="30dp"
@@ -151,49 +170,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitolUsuari"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsuari"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/ptEmail"
+        android:id="@+id/etEmailR"
         android:layout_width="345dp"
         android:layout_height="41dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="308dp"
         android:layout_marginEnd="30dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtitolUsuari"
+        app:layout_constraintTop_toBottomOf="@+id/tvUsuari"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/btConfirmar"
+        android:id="@+id/btnConfirmar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
-        android:layout_marginEnd="35dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#4CAF50"
         android:text="Confirmar"
-        android:backgroundTint="#4CAF50"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ptEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/etEmailR" />
 
-    <ImageButton
-        android:id="@+id/btEnrere"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginBottom="92dp"
-        android:backgroundTint="#4CAF50"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btConfirmar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ptEmail"
-        app:srcCompat="@android:drawable/ic_menu_revert"
-        app:tint="#FFFFFF"
-        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

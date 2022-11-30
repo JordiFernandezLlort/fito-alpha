@@ -12,22 +12,22 @@ import android.widget.Toast;
 
 public class Login extends AppCompatActivity {//AppCompatActivity {
 
-    private Button btRegistre, btIsessio;
-    private TextView usuari, contrasenya;
-    private ImageButton btEnrere;
+    private Button btnRegistre, btnIsessio;
+    private TextView tvUsuari, tvContrasenya;
+    private ImageButton btnEnrere;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        btRegistre = findViewById(R.id.registre);
-        btIsessio = findViewById(R.id.isessio);
-        usuari = findViewById(R.id.nom);
-        contrasenya = findViewById(R.id.contrasenya);
-        btEnrere = findViewById(R.id.btEnrere);
+        btnRegistre = findViewById(R.id.registre);
+        btnIsessio = findViewById(R.id.isessio);
+        tvUsuari = findViewById(R.id.nom);
+        tvContrasenya = findViewById(R.id.contrasenya);
+        btnEnrere = findViewById(R.id.btEnrere);
 
-        btRegistre.setOnClickListener(new View.OnClickListener() {
+        btnRegistre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Al donar click et dirigeix a la pagina de registre
@@ -36,25 +36,27 @@ public class Login extends AppCompatActivity {//AppCompatActivity {
             }
         });
 
-        btIsessio.setOnClickListener(new View.OnClickListener() {
+        btnIsessio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (usuari.getText().toString().isEmpty() || contrasenya.getText().toString().isEmpty()) {
+                if (tvUsuari.getText().toString().isEmpty() || tvContrasenya.getText().toString().isEmpty()) {
                     Toast.makeText(Login.this, "Omple les caselles si vols continuar", Toast.LENGTH_SHORT).show();
 
                 }else{
-                    Intent pagina2 = new Intent(getBaseContext(), Registre.class);
-                    startActivity(pagina2);
+                    Intent MainMenu = new Intent(getBaseContext(), MainMenu.class);
+                    Toast.makeText(Login.this, "S'ha iniciat sessió correctament!", Toast.LENGTH_SHORT).show();
+                    startActivity(MainMenu);
 
                 }
             }
         });
-        btEnrere.setOnClickListener(new View.OnClickListener() {
+
+
+        btnEnrere.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Al donar click et dirigeix a la pagina de login
-                Intent pagina1 = new Intent(getBaseContext(), MainMenu.class);
-                startActivity(pagina1);
+                Intent MainMenu = new Intent(getBaseContext(), MainMenu.class);
+                startActivity(MainMenu);
             }
         });
 

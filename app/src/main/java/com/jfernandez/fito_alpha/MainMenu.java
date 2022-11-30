@@ -9,56 +9,56 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainMenu extends AppCompatActivity {
 
-    private ImageButton configuracio, compte, camera, lupa, opcions;
+    private ImageButton ibConfiguracio, ibCompte, ibCamera, ibSearch, ibOpcions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
-        configuracio = findViewById(R.id.botoConfig);
-        compte = findViewById(R.id.botoCompte);
-        camera = findViewById(R.id.botoCamera);
-        lupa = findViewById(R.id.botoLupa);
-        opcions = findViewById(R.id.botoOpcions);
+        ibConfiguracio = findViewById(R.id.btnFeedback);
+        ibCompte = findViewById(R.id.btnCompta);
+        ibCamera = findViewById(R.id.btnCamera);
+        ibSearch = findViewById(R.id.btnLupa);
+        ibOpcions = findViewById(R.id.btnOpcions);
 
-        /*configuracio.setOnClickListener(new View.OnClickListener(){
+        ibConfiguracio.setOnClickListener(new View.OnClickListener(){
             @Override
                     public void onClick(View view) {
-                    Intent intent = new Intent(getBaseContext(), Configuracio.class);
-                    startActivity(intent);
-            }
-        });*/
-
-        compte.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getBaseContext(), Login.class);
-                startActivity(intent);
+                    Intent Feedback = new Intent(getBaseContext(), Feedback.class);
+                    startActivity(Feedback);
             }
         });
 
-       /* camera.setOnClickListener(new View.OnClickListener(){
+        ibCompte.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getBaseContext(), Camera.class);
-                startActivity(intent);
+                Intent Compte = new Intent(getBaseContext(), Login.class);
+                startActivity(Compte);
             }
         });
 
-        lupa.setOnClickListener(new View.OnClickListener(){
+        ibCamera.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getBaseContext(), SearchActivity.class);
-                startActivity(intent);
+                Intent Camera = new Intent(getBaseContext(), Camera.class);
+                startActivity(Camera);
             }
-        }); */
+        });
 
-        opcions.setOnClickListener(new View.OnClickListener(){
+        ibSearch.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getBaseContext(), Menu.class);
-                startActivity(intent);
+                Intent Search = new Intent(getBaseContext(), Search.class);
+                startActivity(Search);
+            }
+        });
+
+        ibOpcions.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent Opcions = new Intent(getBaseContext(), Menu.class);
+                startActivity(Opcions);
             }
         });
 
