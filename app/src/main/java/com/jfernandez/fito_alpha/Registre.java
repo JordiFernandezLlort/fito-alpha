@@ -77,9 +77,5 @@ public class Registre extends AppCompatActivity {
         editor.putString("Telefon", ptTelefon.getText().toString());
         editor.putString("Email", ptEmail.getText().toString());
 
-       
-
-
-
     }
 }

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Feedback"
+    android:background="@drawable/background">
+
+    <ImageButton
+        android:id="@+id/btnEnrrereSugg"
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="305dp"
+        android:backgroundTint="#00101E10"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEnviarSugg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnEnviarSugg"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        app:tint="#4CAF50"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/tvFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/aclonica"
+        android:text="FEEDBACK"
+        android:textColor="#0F5012"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSuggerencia"
+        android:layout_width="240dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:text="Tens algun dubte o suggerencia? Fes-no-so saber!"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etDubtes"
+        android:layout_width="344dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        app:layout_constraintStart_toStartOf="@+id/tvSuggerencia"
+        app:layout_constraintTop_toBottomOf="@+id/tvSuggerencia" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Introdueix el teu email"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/etNom"
+        app:layout_constraintTop_toBottomOf="@+id/etNom" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tvEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <TextView
+        android:id="@+id/tvNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="Introdueix el teu nom"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFeedback" />
+
+    <EditText
+        android:id="@+id/etNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tvNom"
+        app:layout_constraintTop_toBottomOf="@+id/tvNom" />
+
+    <Button
+        android:id="@+id/btnEnviarSugg"
+        android:layout_width="118dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="96dp"
+        android:backgroundTint="#4CAF50"
+        android:text="ENVIAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
